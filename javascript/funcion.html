@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+      // angka2 = 0 itu digunakan jika nilai dikosongi
+      function penjumlahan(angka1, angka2 = 0, angka3 = 0) {
+        let hasil = angka1 + angka2 + angka3;
+        return hasil;
+      }
+      // isi pemjumlahan bisa dikosongi yg satu kalau dikasi = 0
+      document.getElementById("demo").innerHTML = penjumlahan(4, 15);
+      document.getElementById("demo1").innerHTML = penjumlahan(14, 4, 5);
+      document.getElementById("demo2").innerHTML = penjumlahan(4, 4, 3);
+      document.getElementById("demo3").innerHTML = penjumlahan(4, 4);
+      document.getElementById("demo4").innerHTML = penjumlahan(4, 14, 5);
+
+      //output 8
+    </script>
+  </body>
+</html>
